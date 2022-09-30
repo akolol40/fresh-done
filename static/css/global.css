@@ -1,0 +1,211 @@
+body {
+    background-color: #f7f7f7;
+}
+.wrapper {
+    min-height: 100vh;
+    padding-top: 64px;
+}
+
+.wrapper .container {
+    margin: 0 auto;
+    width: 720px;
+}
+
+.wrapper .container .ant-spin-nested-loading {
+    position: relative;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock {
+    border-radius: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "payment info";
+    grid-template-columns: 1fr 1fr;
+    min-height: 440px;
+    background-color: #fff;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment {
+    box-shadow: 33px 0 11px 0 rgb(0 0 0 / 2%);
+    padding: 32px;
+    grid-area: payment;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment .wrapper {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 370px;
+    transition: .25s;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment .wrapper .header {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -.72px;
+    line-height: 1.22;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment .wrapper .header .logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment .wrapper .header .logo img {
+    height: auto;
+    margin: 0px 10px;
+}
+
+a {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.wrapper .container .ant-spin-nested-loading .invoiceBlock .payment .wrapper .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.ant-spin-nested-loading .ant-spin-container {
+    height: 100%;
+    position: relative;
+    transition: opacity .3s;
+}
+
+.ant-spin-nested-loading .ant-spin-container .services {
+    grid-gap: 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.ant-spin-nested-loading .ant-spin-container .services .body {
+    grid-gap: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(37,33,41,.04),0px 0px 6px rgba(37,33,41,.04);
+    cursor: pointer;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+    padding: 10px 18px;
+    transition: .25s; 
+}
+
+.body:hover {
+    box-shadow: 0px 0px 0px 1px #f4f5f6,0px 16px 32px rgba(37,33,41,.08),0px 0px 12px rgba(37,33,41,.04) !important;
+}
+
+.services .body .logo {
+    align-items: center;
+    display: flex;
+}
+
+.services .body .logo img {
+    width: 40px;
+}
+
+.service_title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.info {
+    grid-area: info;
+}
+
+.only_hieght {
+   display: flex;
+}
+
+.only_hieght .body {
+    grid-gap: 32px;
+    align-content: space-between;
+    background-color: var(--color-gray-scale-1);
+    color: #252129;
+    display: grid;
+    font-size: 16px;
+    gap: 32px;
+    height: 100%;
+    line-height: 24px;
+    overflow: hidden;   
+}
+
+.only_hieght .body:hover {
+    box-shadow: none !important;
+}
+
+.only_hieght .body .info {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.info .top {
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    line-height: 24px;
+}
+
+.top .sum {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -.72px;
+    line-height: 1.22;
+}
+
+
+.infoTitle {
+    color: #a2a2a3;
+}
+
+.infoComment {
+    word-break: break-all;
+}
+
+.bottom {
+    height: fit-content; 
+    position: absolute;
+    bottom: 40px;
+}
+
+.bottom .help {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.bottom .help .links {
+    grid-gap: 8px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content;
+    margin-top: 12px;
+}
+
+.links img {
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.offer a {
+    color: #f53;
+}
